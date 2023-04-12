@@ -1,0 +1,537 @@
+html {
+    background-image: url("/images/skog.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+body {
+    font-family: 'Hind', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Grön genomskinlig ruta bakom allt innehåll*/
+
+#container {
+    background-color: rgb(202, 210, 197, 0.6);
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+}
+
+
+.box {
+    position: relative;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    background: #CAD2C5;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .large-menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9998;
+        background-color: rgba(1 1 1);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+    }
+
+    #mobile-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile-menu li {
+        text-align: center;
+
+    }
+
+    #mobile-menu li .menu-symbol {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    #mobile-menu a {
+        display: block;
+        padding: 7px;
+        color: white;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+
+    #mobile-menu li a {
+        display: block;
+        font-size: 0.8em;
+    }
+
+    .cat-row,
+    .news-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-item {
+        margin-bottom: 5px;
+    }
+
+    .cat-img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-btn,
+    .category-btn {
+        position: relative;
+        z-index: 2;
+    }
+
+    .about-images {
+        display: none;
+    }
+
+    .hero-btn {
+        position: relative;
+        top: -55px;
+        left: 50%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .tree {
+        width: 75%;
+
+    }
+
+    .contact-img,
+    .about-img,
+    .offer-img,
+    .tree-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-img img,
+    .about-img img,
+    .offer-img img,
+    .tree-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-text {
+        margin-top: 10px;
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+}
+
+/*placerar herobilden*/
+#header_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_top img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*knapp på herobilden*/
+.hero-btn {
+
+    transform: translate(-50%, -50%);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    background-color: #F48668;
+    padding: 20px;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid;
+    font-size: large;
+}
+
+.hero-btn:hover {
+    background-color: #84A98C;
+}
+
+/*design för breadcrumbs*/
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    font-size: 22px;
+    margin: 0;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #006297
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/*kategoribilder*/
+#category,
+#allnews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-container {
+    display: flex;
+}
+
+.cat-row,
+.news-row {
+
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cat-row img {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#category img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
+
+.news-item {
+    border: solid;
+    flex: 1;
+    overflow: auto;
+    margin-right: 20px;
+
+}
+
+.news-item img {
+    display: flex;
+    float: right;
+    margin-top: -9em;
+    margin-bottom: 3px;
+
+}
+
+.news-item h2 {
+    margin-top: 5px;
+}
+
+.news-item p {
+    padding-right: 10em;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+/*kategoriknappar*/
+.category-item {
+    position: relative;
+}
+
+.category-btn {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #84A98C;
+    border-radius: 10px;
+    padding: 15px;
+    opacity: 0.8;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.category-btn:hover {
+    background-color: #F48668;
+}
+
+.about-img {
+    margin-top: 0;
+}
+
+.about-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Kantlinje och avstånd för om-texten*/
+.about {
+    border: solid;
+    margin-top: 3em;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+/*kantlinje och avstånd specifik nyhetstext*/
+.tree {
+    border: solid;
+    margin-top: 3em;
+    margin: 0 auto;
+    padding: 1em;
+    width: 90%;
+
+}
+
+.about p,
+.tree p {
+    margin: 8px;
+}
+
+
+
+
+.tree-img {
+    display: flex;
+    justify-content: center;
+}
+
+/*bild på kontakt-sida*/
+.contact-img,
+.offer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/*text på bilden på kontaktsida*/
+.contact-text,
+.offer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+
+}
+
+/*kontaktformuläret*/
+#contact-form,
+#offer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+label {
+    width: 50%;
+    text-align: left;
+}
+
+.input-container {
+    width: 80%;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.service {
+    float: right;
+    background-color: white;
+    width: 56%;
+    border-radius: 10px;
+    margin-top: -12%;
+}
+
+/*Skicka-knapp*/
+input[type=submit] {
+    background-color: #F48668;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 2em;
+    padding-right: 2em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/*hover effekt på skicka-knapp*/
+input[type=submit]:hover {
+    background-color: #84A98C;
+}
+
+/*rundade hörn på input fälten*/
+input[type=text],
+textarea[id=message],
+input[type=number] {
+    border-radius: 8px;
+    border: none;
+
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 801px) {
+
+    /*Flyttar loggan längst till vänster */
+    #mainnavlist li:first-child {
+        margin-left: -50px;
+    }
+
+    /*Döljer meny för mobil*/
+    .mobile-logo {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /*design för menyn*/
+    #mainnavlist {
+        background-color: #52796F;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    #mainnavlist ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    #mainnavlist li {
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+
+    #mainnavlist li.menu-btn {
+        float: right;
+        background-color: #84A98C;
+        display: inline;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+
+    }
+
+    /*markerar aktiv sida i menyn*/
+    li a.active {
+        border: solid;
+        border-radius: 5px;
+    }
+
+    #mainnavlist li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    /*Länkar*/
+    #mainnavlist a:active {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    #mainnavlist a:visited {
+        color: black;
+    }
+
+    #mainnavlist a:hover {
+        color: #F48668;
+    }
+
+    .hero-btn {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+
+    .about-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .about-images img {
+        margin: 20px;
+    }
+
+    .contact-text,
+    .offer-text {
+        font-size: 52px;
+        white-space: nowrap;
+    }
+
+    .news-item h2 {
+        font-size: 24px;
+    }
+
+
+}

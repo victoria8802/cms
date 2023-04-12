@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+    <title>Skog AB - Offertförfrågan</title>
+</head>
+
+<body>
+    <div class="large-menu">
+        <nav id="mainnav">
+            <ul id="mainnavlist">
+                <li style="float:left"><a href="index.html" title="Länk till startsidan vid klick på logotyp">
+                        <img src="images/Logotyp.png" alt="Logotyp"></a></li>
+                <li class="menu-btn"><a href="about.html">Om oss</a></li>
+                <li class="menu-btn"><a href="contact.html">Kontakt</a></li>
+                <li class="menu-btn"><a class="active" href="offer.html">Offert</a></li>
+                <li class="menu-btn"><a href="news.html">Nyheter</a></li>
+                <li class="menu-btn"><a href="index.html">Start</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-logo">
+        <a href="index.html"><img src="images/logotyp.png" alt="Logotyp"></a>
+    </div>
+    <nav id="mobile-menu">
+        <ul>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="index.html"><img class="menu-symbol" src="images/homepage-icon.svg" alt="">
+                </div>
+                Start</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="news.html"><img class="menu-symbol" src="images/nyheter.svg" alt="">
+                </div>
+                Nyheter</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="offer.html"><img class="menu-symbol" src="images/offer.png" alt="">
+                </div>
+                Offert</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="contact.html"><img class="menu-symbol" src="images/mail_vit.svg" alt="">
+                </div>
+                Kontakt</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="about.html"><img class="menu-symbol" src="images/info_mobile.svg" alt="">
+                </div>
+                Om oss</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <div class="box">
+            <div class="offer-img">
+                <img src="images/offer.jpg" alt="Fällt träd i trädgård">
+                <p class="offer-text">Offertförfrågan</p>
+            </div>
+
+            <ul class="breadcrumb">
+                <li><a href="index.html">Start</a></li>
+                <li>Offertförfrågan</li>
+            </ul>
+            <h1>Vänligen fyll i nedan uppgifter</h1>
+
+            <section id="offer-form">
+                <form>
+                    <div class="form-row">
+                        <label for="name">För- och efternamn:</label>
+                        <input type="text" name="name" id="name" placeholder="Ditt namn..."><br><br>
+                    </div>
+                    <div class="form-row"><label for="phone">Telefonnummer:</label>
+                        <input type="text" name="phone" id="phone" placeholder="Ditt telefonnummer..."><br><br>
+                    </div>
+                    <div class="form-row"><label for="email">E-postadress:</label>
+                        <input type="text" name="email" id="email" placeholder="Din e-postadress..."><br><br>
+                    </div>
+                    <div class="form-row"><label for="name">Gatuadress:</label>
+                        <input type="text" name="address" id="address" placeholder="Din gatuadress..."><br><br>
+                    </div>
+                    <div class="form-row"><label for="zip">Postnummer:</label>
+                        <input type="number" name="zip" id="zip" placeholder="Ditt postnummer..."><br><br>
+                    </div>
+                    <div class="form-row"><label for="city">Ort:</label>
+                        <input type="text" name="city" id="city" placeholder="Din portort..."><br><br>
+                    </div>
+
+                    <p>Tjänst:</p>
+                    <div class="service">
+                        <div class="form-row">
+                            <input type="checkbox" name="service" id="service1" value="cutting">
+                            <label for="service1">Trädfällning</label><br><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" name="service" id="service2" value="cutting">
+                            <label for="service2">Gräsklippning</label><br><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" name="service" id="service3" value="cutting">
+                            <label for="service3">Bortforsling</label><br><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" name="service" id="service4" value="cutting">
+                            <label for="service4">Beskärning</label><br><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="checkbox" name="service" id="service5" value="cutting">
+                            <label for="service5">Stubbfräsning</label><br><br>
+
+                        </div>
+                    </div>
+                </form><br><br>
+                <input type="submit" value="Skicka">
+
+
+
+            </section>
+
+        </div>
+
+
+        <footer>
+            <p>Skog Ab Skogsvägen 1 123 45 Skognäs 012-345 67 89</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

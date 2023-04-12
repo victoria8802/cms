@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+    <title>Skog AB - Start</title>
+</head>
+
+<body>
+    <div class="large-menu">
+        <nav id="mainnav">
+            <ul id="mainnavlist">
+                <li style="float:left"><a href="index.html" title="Länk till startsidan vid klick på logotyp">
+                        <img src="images/Logotyp.png" alt="Logotyp"></a></li>
+                <li class="menu-btn"><a href="about.html">Om oss</a></li>
+                <li class="menu-btn"><a href="contact.html">Kontakt</a></li>
+                <li class="menu-btn"><a href="offer.html">Offert</a></li>
+                <li class="menu-btn"><a href="news.html">Nyheter</a></li>
+                <li class="menu-btn"><a class="active" href="index.html">Start</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobile-logo">
+        <a href="index.html"><img src="images/logotyp.png" alt="Logotyp"></a>
+    </div>
+    <nav id="mobile-menu">
+        <ul>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="index.html"><img class="menu-symbol" src="images/homepage-icon.svg" alt="">
+                </div>
+                Start</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="news.html"><img class="menu-symbol" src="images/nyheter.svg" alt="">
+                </div>
+                Nyheter</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="offer.html"><img class="menu-symbol" src="images/offer.png" alt="">
+                </div>
+                Offert</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="contact.html"><img class="menu-symbol" src="images/mail_vit.svg" alt="">
+                </div>
+                Kontakt</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="about.html"><img class="menu-symbol" src="images/info_mobile.svg" alt="">
+                </div>
+                Om oss</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+
+        <div id="hero">
+            <picture id="header_top">
+                <source media="(min-width: 1025px)" srcset="images/hero_stor.jpg">
+                <source media="(min-width: 801px)" srcset="images/hero_mellan.jpg">
+                <source media="(max-width: 800px)" srcset="images/hero_liten.jpg">
+                <img src="images/hero.jpg" alt="Lastbild med lyftkran vid stort träd">
+
+            </picture>
+            <button class="hero-btn" onclick="btnClick()" id="offer">Fråga offert!</button>
+        </div>
+        <div class="box">
+            <div id="category">
+                <div class="cat-row">
+                    <div class="category-item">
+                        <img class="cat-img" src="images/category1.jpg" alt="">
+                        <button class="category-btn" onclick="newsClick()" id="news">Nyheter</button>
+                    </div>
+                    <div class="category-item">
+                        <img class="cat-img" src="images/category2.jpg" alt="">
+                        <button class="category-btn" onclick="contactClick()" id="contact">Kontakt</button>
+                    </div>
+                </div>
+                <div class="cat-row">
+                    <div class="category-item">
+                        <img class="cat-img" src="images/category3.jpg" alt="">
+                        <button class="category-btn" onclick="offerClick()" id="offer2">Offert</button>
+                    </div>
+                    <div class="category-item">
+                        <img class="cat-img" src="images/category4.jpg" alt="">
+                        <button class="category-btn" onclick="aboutClick()" id="about">Om oss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Skog Ab Skogsvägen 1 123 45 Skognäs 012-345 67 89</p>
+        </footer>
+
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>

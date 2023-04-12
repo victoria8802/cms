@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+    <title>Skog AB - Kontakt</title>
+</head>
+
+<body>
+    <div class="large-menu">
+        <nav id="mainnav">
+            <ul id="mainnavlist">
+                <li style="float:left"><a href="index.html" title="Länk till startsidan vid klick på logotyp">
+                        <img src="images/Logotyp.png" alt="Logotyp"></a></li>
+                <li class="menu-btn"><a href="about.html">Om oss</a></li>
+                <li class="menu-btn"><a class="active" href="contact.html">Kontakt</a></li>
+                <li class="menu-btn"><a href="offer.html">Offert</a></li>
+                <li class="menu-btn"><a href="news.html">Nyheter</a></li>
+                <li class="menu-btn"><a href="index.html">Start</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-logo">
+        <a href="index.html"><img src="images/logotyp.png" alt="Logotyp"></a>
+    </div>
+    <nav id="mobile-menu">
+        <ul>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="index.html"><img class="menu-symbol" src="images/homepage-icon.svg" alt="">
+                </div>
+                Start</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="news.html"><img class="menu-symbol" src="images/nyheter.svg" alt="">
+                </div>
+                Nyheter</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="offer.html"><img class="menu-symbol" src="images/offer.png" alt="">
+                </div>
+                Offert</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="contact.html"><img class="menu-symbol" src="images/mail_vit.svg" alt="">
+                </div>
+                Kontakt</a>
+            </li>
+            <li>
+                <div class="menu-symbol-wrapper">
+                    <a href="about.html"><img class="menu-symbol" src="images/info_mobile.svg" alt="">
+                </div>
+                Om oss</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div id="container">
+        <div class="box">
+            <div class="contact-img">
+                <img src="images/contact.jpg" alt="Fällt träd i trädgård">
+                <p class="contact-text">Välkommen att kontakta oss!</p>
+            </div>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Start</a></li>
+                <li>Kontakt</li>
+            </ul>
+            <h1>Kontaktformulär</h1>
+          
+            <section id="contact-form">
+                <form>
+
+
+                    <div class="form-row">
+                        <label for="name">För- och efternamn:</label>
+                        <div class="input-container"><input type="text" name="name" id="name"
+                                placeholder="Ditt namn..."><br><br>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Telefon:</label>
+                        <div class="input-container"><input type="text" name="phone" id="phone"
+                                placeholder="Ditt telefonnummer..."><br><br>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-postadress:</label>
+                        <div class="input-container"><input type="text" name="email" id="email"
+                                placeholder="Din e-postadress..."><br><br>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Meddelande:</label>
+                        <div class="input-container"><textarea id="message" name="message"
+                                placeholder="Ditt meddelande..." style="height:200px"></textarea></div><br><br>
+
+                    </div>
+                    <input type="submit" value="Skicka">
+
+                </form>
+
+            </section>
+
+        </div>
+
+
+        <footer>
+            <p>Skog Ab Skogsvägen 1 123 45 Skognäs 012-345 67 89</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
