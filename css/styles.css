@@ -121,7 +121,7 @@ body {
     }
 
     .contact-img,
-    .about-img,
+    .about-img-mobile,
     .offer-img,
     .tree-img {
         display: flex;
@@ -130,8 +130,8 @@ body {
     }
 
     .contact-img img,
-    .about-img img,
     .offer-img img,
+    .about-img-mobile img,
     .tree-img img {
         max-width: 100%;
         height: auto;
@@ -141,6 +141,10 @@ body {
         margin-top: 10px;
         font-size: 24px;
         white-space: nowrap;
+    }
+
+    .about-img {
+        display: none;
     }
 
 }
@@ -380,6 +384,25 @@ label {
     text-align: left;
 }
 
+/*gör inputfälten lite högre*/
+#name,
+#phone,
+#email,
+#address,
+#zip,
+#city {
+    height: 50px;
+}
+
+/*större checkbox och mellanrum mellan box och text*/
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+label {
+    margin-left: 10px;
+}
+
 .input-container {
     width: 80%;
     text-align: left;
@@ -428,6 +451,68 @@ footer {
 
 @media only screen and (min-width: 801px) {
 
+    /*design för menyn*/
+    #mainnavlist {
+        background-color: #52796F;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    #mainnavlist ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    #mainnavlist li {
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+
+    #mainnavlist li.menu-btn {
+        float: right;
+        background-color: #84A98C;
+        display: inline;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+
+    }
+
+    /*markerar aktiv sida i menyn*/
+    li a.active {
+        border: solid;
+        border-radius: 5px;
+    }
+
+    #mainnavlist li a {
+        display: block;
+        text-decoration: none;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    /*Länkar*/
+    #mainnavlist a:active {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        color: black;
+    }
+
+    #mainnavlist a:visited {
+        color: black;
+    }
+
+    #mainnavlist a:hover {
+        color: #F48668;
+    }
+
+
     /*Flyttar loggan längst till vänster */
     #mainnavlist li:first-child {
         margin-left: -50px;
@@ -439,6 +524,10 @@ footer {
     }
 
     #mobile-menu {
+        display: none;
+    }
+
+    .about-img-mobile {
         display: none;
     }
 }
@@ -522,6 +611,10 @@ footer {
 
     .about-images img {
         margin: 20px;
+    }
+
+    .about-img-mobile {
+        display: none;
     }
 
     .contact-text,
