@@ -82,21 +82,41 @@
             <div id="category">
                 <div class="cat-row">
                     <div class="category-item">
-                        <img class="cat-img" src="images/category1.jpg" alt="">
+                        <picture id="category_pics">
+                            <source media="(min-width: 1521px)" srcset="images/category1.jpg">
+                            <source media="(min-width: 801px)" srcset="images/category1_tablet.jpg">
+                            <source media="(max-width: 800px)" srcset="images/category1.jpg">
+                            <img src="images/category1.jpg" alt="">
+                        </picture>                        
                         <button class="category-btn" onclick="newsClick()" id="news">Nyheter</button>
                     </div>
                     <div class="category-item">
-                        <img class="cat-img" src="images/category2.jpg" alt="">
+                        <picture id="category_pics">
+                            <source media="(min-width: 1521px)" srcset="images/category2.jpg">
+                            <source media="(min-width: 801px)" srcset="images/category2_tablet.jpg">
+                            <source media="(max-width: 800px)" srcset="images/category2.jpg">
+                            <img src="images/category2.jpg" alt="">
+                        </picture>  
                         <button class="category-btn" onclick="contactClick()" id="contact">Kontakt</button>
                     </div>
                 </div>
                 <div class="cat-row">
                     <div class="category-item">
-                        <img class="cat-img" src="images/category3.jpg" alt="">
+                        <picture id="category_pics">
+                            <source media="(min-width: 1521px)" srcset="images/category3.jpg">
+                            <source media="(min-width: 801px)" srcset="images/category3_tablet.jpg">
+                            <source media="(max-width: 800px)" srcset="images/category3.jpg">
+                            <img src="images/category3.jpg" alt="">
+                        </picture>  
                         <button class="category-btn" onclick="offerClick()" id="offer2">Offert</button>
                     </div>
                     <div class="category-item">
-                        <img class="cat-img" src="images/category4.jpg" alt="">
+                        <picture id="category_pics">
+                            <source media="(min-width: 1521px)" srcset="images/category4.jpg">
+                            <source media="(min-width: 801px)" srcset="images/category4_tablet.jpg">
+                            <source media="(max-width: 800px)" srcset="images/category4.jpg">
+                            <img src="images/category4.jpg" alt="">
+                        </picture>  
                         <button class="category-btn" onclick="aboutClick()" id="about">Om oss</button>
                     </div>
                 </div>

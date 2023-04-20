@@ -518,6 +518,12 @@ footer {
         margin-left: -50px;
     }
 
+    .hero-btn {
+        position: relative;
+        top: -55px;
+        left: 50%;
+    }
+
     /*Döljer meny för mobil*/
     .mobile-logo {
         display: none;
